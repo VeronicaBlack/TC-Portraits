@@ -1,0 +1,236 @@
+<!-- 2016 by Alex (http://codepen.io/akwright/pen/azyzVZ) -->
+<!-- William Heard Kilpatrick -->
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Teachers College Historical Portraiture</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+
+        <link rel="stylesheet" href="css/style.css">
+		
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        var idleState = false;
+        var idleTimer = null;
+        $('*').bind('mousemove click mouseup mousedown keydown keypress keyup submit change mouseenter scroll resize dblclick', function () {
+            clearTimeout(idleTimer);
+            if (idleState == true) {
+                $("body").css('background-color','#fff');            
+            }
+            idleState = false;
+            idleTimer = setTimeout(function () {
+				window.scrollTo(0, 0);			
+                // $("body").css('background-color','#000');
+                idleState = true; }, 360000); //change that number into the miliseconds you want it to wait before you reload. 60000 = 1min. 
+        });
+        $("body").trigger("mousemove");
+    });
+
+</script>
+
+  <style>
+	  .carousel-inner > .item > img,
+	  .carousel-inner > .item > a > img {
+	      width: 70%;
+	      margin: auto;
+	  }
+  </style>
+
+  </head>
+
+  <body>
+
+    <div id="hero">
+
+	<h1>Teachers College Historical Portraiture<br>Restored Oil Paintings<p><span>William Heard Kilpatrick</span></p></h1>
+
+	<a class="arow_down scroll" href="#item01">
+		<svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 200" xml:space="preserve">
+				<g>
+					<path d="M106.308,29.384c6.332,0,11.664,2.444,15.984,7.344c9.214,11.232,18.286,22.174,27.216,32.832l43.2,51.84
+						c5.184-6.629,11.806-14.62,19.873-23.976c8.059-9.362,15.834-18.65,23.328-27.864c8.922-10.658,17.994-21.6,27.215-32.832
+						c4.32-4.9,9.646-7.344,15.984-7.344c4.895,0,9.355,1.58,13.393,4.752c4.32,3.74,6.764,8.424,7.344,14.04
+						c0.574,5.616-1.014,10.726-4.752,15.336l-86.4,103.68c-4.037,4.894-9.362,7.344-15.984,7.344c-6.628,0-11.954-2.45-15.984-7.344
+						l-86.4-103.68c-3.747-4.61-5.333-9.72-4.752-15.336c0.574-5.616,3.024-10.3,7.344-14.04
+						C96.945,30.964,101.407,29.384,106.308,29.384z"></path>
+				</g>
+			</svg>
+	</a>
+</div> 
+<!-- / hero -->
+
+<!-- First item -->
+<div class="content">
+	
+	<h1 id="item01">Portrait of William Heard Kilpatrick</h1>
+	<div class="nav">
+		<!--  <a class="arow_prev scroll" href="#hero">prev</a>
+		<br>
+		<a class="arow_next scroll" href="#item02">next</a> -->
+	</div>
+
+	<p> William Heard Kilpatrick, Professor of Education, 1911-1938 </p>
+<!-- Paragraph about who he was and his importance to TC -->
+	<p> At The time of his retirement from active service in the faculty of Teachers College (1937), hundreds of Dr. William H. Kilpatrick's friends, including students, colleagues, and many others, gratefully joined resources to present a portrait of him to Teachers College. This likeness of the distinguished educator hangs now in the library of the College.
+	<p>
+	From the funds gathered on that occasion there was an amount over and above that needed for the portrait. Professor Kilpatrick, in conference with the Fund Committee, was pleased that this residue should become the permanent basis for an award which would give further stimulus to the great cause which his own career had so brilliantly advanced. The fund accordingly was put into the possession of the Trustees of Teachers College and there was thus established by the College the William Heard Kilpatrick Award for Distinguished Service in Philosophy of Education. A committee appointed for the purpose studies the field and every two years selects a person to recommend as the recipient of this Award. </p>
+<!-- Citing source -->
+	<h2 id="item04"> Teachers College Record Volume 49 Number 4, 1948, p. 250-262 </h2>
+
+<!-- Second item -->
+	<h1 id="item02">Photograph</h1>
+	<div class="nav">
+		<!-- <a class="arow_prev scroll" href="#item01">prev</a>
+		<br>
+		<a class="arow_next scroll" href="#item03">next</a> -->
+	</div>
+
+<!-- Adding bootstrap carosuell here -->
+
+	<div class="container">
+	  <br>
+	  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+	    <!-- Indicators -->
+	<!--     <ol class="carousel-indicators">
+	      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	      <li data-target="#myCarousel" data-slide-to="1"></li>
+	      <li data-target="#myCarousel" data-slide-to="2"></li>
+	      <li data-target="#myCarousel" data-slide-to="3"></li>
+	    </ol> -->
+
+	    <!-- Wrapper for slides -->
+	    <div class="carousel-inner" role="listbox">
+	      <div class="item active">
+	      	<!-- Add Images of William Heard Kilpatrick --> 
+	        <img src="images/kilpatrick2.png" alt="T1" width="460" height="345">
+	          <div class="carousel-caption">
+	          	<!-- Citing Captions -->
+	              <p>Professor William Kilpatrick, Department Of Philosophy And Social Sciences.  Teachers College.  (Date Not Known)</p>
+	          </div> 
+	      </div>
+
+	      <div class="item">
+	        <img src="images/kilpatrick1.png" alt="t2" width="460" height="345">
+	          <div  class="carousel-caption">
+<!-- Citing Captions -->
+	            <p>Portrait of William Heard Kilpatrick, Teachers College faculty (Date Not Known)</p>
+
+	          </div>
+	      </div>
+	    
+	      <div class="item">
+	        <img src="images/kilpatrickcards.png" alt="file" width="460" height="345">
+	          <div  class="carousel-caption">
+	          	<!-- Citing Captions -->
+	            <p>Christmas Cards, 1961 (v.57) of the diaries of William Kilpatrick</p>
+	          </div>
+	      </div>
+
+	      <div class="item">
+	        <img src="images/kilpatrickindex.png" alt="test" width="460" height="345">
+	          <div  class="carousel-caption">
+	          	<!-- Citing Captions -->
+	            <p>Index, 1956 (v.52) of the diaries of William Kilpatrick</p>
+	          </div>
+	      </div>
+	    </div>
+
+	    <!-- Left and right controls -->
+
+	    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+	      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	      <span class="sr-only">Previous</span>
+	    </a>
+	    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+	      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	      <span class="sr-only">Next</span>
+	    </a>
+
+	  </div>
+	</div>
+
+<!-- info about images/stuff -->
+		
+<!-- Citing source -->
+	<p></p>
+
+<!-- Third item -->
+<!-- Third item -->
+
+	<h1 id="item03">Kilpatrick Collection</h1>
+
+<p>Dr.William Heard Kilpatrick is Professor Emeritus of Philosophy and education at Teachers College, Columbia University where he taught from 1912 – 1937. He is considered one of the most popular professors ever at Teachers College having taught more than 35,000 students during his tenure. As a highly effective proponent of progressive education, advocating project-based learning, curriculum learning, and whole child education, Kilpatrick completed his bachelor’s degree at Mercer University in 1891.
+<p>
+He undertook graduate study in mathematics at Johns Hopkins University and in 1897, Mercer University offered him a faculty position in mathematics and astronomy. He later served as acting president of the school from 1903–1905
+<p>
+Kilpatrick’s immensely popular article “The Project Method” (1918) made him well known among educators throughout the United States. This approach focuses on the interests of children, which advocates that by using their interests as units of study, learning becomes more relevant and meaningful. His most prominent book Foundations of Method (1925) became a widely used textbook in education courses nationwide.
+<p>
+In addition to teaching and writing, Kilpatrick engaged in a variety of other endeavors related to the promotion of progressive education principles. A cofounder of Bennington (VT) College, he served as president of its board of trustees from 1931–1938. He also formed the Kilpatrick Discussion Group with several other Teachers College faculty members, which met from its inception through World War II. Kilpatrick was a founding member of the John Dewey Society in 1935 and served as the organization’s leader until 1957. He edited the Society’s first yearbook The Teacher and Society (1937) and co edited its ninth yearbook Intercultural Attitudes in the Making (1947).
+
+He taught part time during his first years of retirement, and remained an author and editor. Likewise, he was involved in civil rights causes—a rarity for a Southerner of his generation.</p>
+
+<!-- Citing source -->
+	<h2>
+		<p>http://pocketknowledge.tc.columbia.edu/home.php/browse/32527?browseby=chart&sortfiles=volume&optdisplay=0</p> 
+	</h2>
+	
+
+	<div class="nav">
+		<!-- <a class="arow_prev scroll" href="#item02">prev</a> -->
+	</div>
+<!-- Video -->
+<video width="480" height="360" controls>
+  <source src="video/DynamicLearning_edit.mp4" type="video/mp4">
+
+Your browser does not support the video tag.
+</video>
+<h2>
+	<p>Historical Video Footage-Dynamic Learning- 1931 83b 20 min, black & white </p> http://pocketknowledge.tc.columbia.edu/home.php/viewfile/27193 
+</h2>
+
+<!-- Citing source -->
+	<p> <br>
+	Dr. Kilpatrick sets forth some of the principles underlying creative or progressive education. He develops the idea that the child’s learning must be related to real life situations. Methods by which this dynamic learning can be fostered are illustrated in actual classroom scenes. Encyclopedia Britannica, (1931)
+	<p>
+	This film clip shows Professor Kilpatrick demonstrate in a classroom what he thinks "To Learn" means. He speaks about academic learning as well as what he refers to as "home learning". Kilpatrick believes that the child is an active participant - that learning is active and dynamic.</p> 
+
+	
+
+<!-- CV/Resume -->
+	<p></p>
+
+<!-- Citing source -->
+	<h2 id="item04">More information can be found at Pocketknowledge.tc.columbia.edu</h2>
+
+</div> <!-- / content -->
+
+<a class="arow_top scroll" href="#hero">
+	<svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 200" xml:space="preserve">
+				<g>
+					<path d="M106.308,29.384c6.332,0,11.664,2.444,15.984,7.344c9.214,11.232,18.286,22.174,27.216,32.832l43.2,51.84
+						c5.184-6.629,11.806-14.62,19.873-23.976c8.059-9.362,15.834-18.65,23.328-27.864c8.922-10.658,17.994-21.6,27.215-32.832
+						c4.32-4.9,9.646-7.344,15.984-7.344c4.895,0,9.355,1.58,13.393,4.752c4.32,3.74,6.764,8.424,7.344,14.04
+						c0.574,5.616-1.014,10.726-4.752,15.336l-86.4,103.68c-4.037,4.894-9.362,7.344-15.984,7.344c-6.628,0-11.954-2.45-15.984-7.344
+						l-86.4-103.68c-3.747-4.61-5.333-9.72-4.752-15.336c0.574-5.616,3.024-10.3,7.344-14.04
+						C96.945,30.964,101.407,29.384,106.308,29.384z"></path>
+				</g>
+			</svg>
+</a>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
