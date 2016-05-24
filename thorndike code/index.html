@@ -1,0 +1,227 @@
+<!-- 2016 by Alex (http://codepen.io/akwright/pen/azyzVZ) -->
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Teachers College Historical Portraiture</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+
+        <link rel="stylesheet" href="css/style.css">
+		
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  	<!-- Timer to scroll back up to the top-->
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        var idleState = false;
+        var idleTimer = null;
+        $('*').bind('mousemove click mouseup mousedown keydown keypress keyup submit change mouseenter scroll resize dblclick', function () {
+            clearTimeout(idleTimer);
+            if (idleState == true) {
+                $("body").css('background-color','#fff');            
+            }
+            idleState = false;
+            idleTimer = setTimeout(function () {
+				window.scrollTo(0, 0);			
+                // $("body").css('background-color','#000');
+                idleState = true; }, 360000); //change that number into the miliseconds you want it to wait before you reload. 60000 = 1min. 
+        });
+        $("body").trigger("mousemove");
+    });
+
+</script>
+
+  <style>
+	  .carousel-inner > .item > img,
+	  .carousel-inner > .item > a > img {
+	      width: 70%;
+	      margin: auto;
+	  }
+  </style>
+
+  </head>
+
+  <body>
+
+    <div id="hero">
+
+	<h1>Teachers College Historical Portraiture<br>Restored Oil Paintings<p><span>Edward Thorndike</span></p></h1>
+
+	<a class="arow_down scroll" href="#item01">
+		<svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 200" xml:space="preserve">
+				<g>
+					<path d="M106.308,29.384c6.332,0,11.664,2.444,15.984,7.344c9.214,11.232,18.286,22.174,27.216,32.832l43.2,51.84
+						c5.184-6.629,11.806-14.62,19.873-23.976c8.059-9.362,15.834-18.65,23.328-27.864c8.922-10.658,17.994-21.6,27.215-32.832
+						c4.32-4.9,9.646-7.344,15.984-7.344c4.895,0,9.355,1.58,13.393,4.752c4.32,3.74,6.764,8.424,7.344,14.04
+						c0.574,5.616-1.014,10.726-4.752,15.336l-86.4,103.68c-4.037,4.894-9.362,7.344-15.984,7.344c-6.628,0-11.954-2.45-15.984-7.344
+						l-86.4-103.68c-3.747-4.61-5.333-9.72-4.752-15.336c0.574-5.616,3.024-10.3,7.344-14.04
+						C96.945,30.964,101.407,29.384,106.308,29.384z"></path>
+				</g>
+			</svg>
+	</a>
+</div> 
+<!-- / hero -->
+
+<!-- First item -->
+<div class="content">
+	
+	<h1 id="item01">Portrait of Edward Lee Thorndike</h1>
+	<div class="nav">
+		<!--  <a class="arow_prev scroll" href="#hero">prev</a>
+		<br>
+		<a class="arow_next scroll" href="#item02">next</a> -->
+	</div>
+
+	<p> Dr. Edward Lee Thorndike made his greatest contribution in scientific research, which influenced the method and practice in elementary and secondary education. </p>
+
+	<p> The celebration of the twenty-fifth anniversary of Professor E. L. Thorndike's connection with Teachers College was marked by the dinner given for his family, students, and friends, at the Faculty Club in February, 1926, and by the special issue of the TEACHERS COLLEGE RECORD for February of that year, containing a bibliography of his works. The last permanent item in this occasion of recognition is the hanging in Teachers College of his portrait, which was unveiled on February 16, 1928.
+	<p>
+	The portrait is the work of the distinguished painter, Wayman Adams. It shows Dr. Thorndike in academic dress in a sitting position. The use of color in the background gives life and verve to the picture. No painter could hope to convey to the full the dynamic personality that Teachers College has known for these twenty-five years, but Mr. Adams has brought unusual understanding to his task, and has achieved an artistic success as well as a satisfying likeness. The portrait is hung in the lobby of the second floor of Russell Hall, near the psychology division of the library.
+	<p>
+	The unveiling took place in the presence of a group of friends and faculty of Teachers College. The presentation was made by Dr. John J. Coss of Columbia University on behalf of the friends and students who had planned for the portrait to be painted. Dean William F. Russell accepted the gift in the name of Teachers College in a speech of affectionate recognition of the influence of Dr. Thorndike in the life of the College and of his position among educators and psychologists.  </p>
+<!-- Citing source -->
+	<h2 id="item04"> From Teachers College Record Volume 29 Number 8, 1928, p. 739-752 http://www.tcrecord.org ID Number: 5768 </h2>
+
+<!-- Second item -->
+	<h1 id="item02">Photograph</h1>
+	<div class="nav">
+		<!-- <a class="arow_prev scroll" href="#item01">prev</a>
+		<br>
+		<a class="arow_next scroll" href="#item03">next</a> -->
+	</div>
+
+<!-- Image -->
+<!-- <img src="images/thorndike1.png" alt="thorndike" height="780" width="450"> -->
+<!-- 	<h2 id="item04">
+	<p>Portrait Of Mr. Edward L. Thorndike, Teachers College. (Date Not Known) (n/a, 1900-1950), by Photographer: 
+		Unknown </h2> -->
+
+<!-- Adding bootstrap carosuell here -->
+
+	<div class="container">
+	  <br>
+	  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+	    <!-- Indicators -->
+	<!--     <ol class="carousel-indicators">
+	      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	      <li data-target="#myCarousel" data-slide-to="1"></li>
+	      <li data-target="#myCarousel" data-slide-to="2"></li>
+	      <li data-target="#myCarousel" data-slide-to="3"></li>
+	    </ol> -->
+
+	    <!-- Wrapper for slides -->
+	    <div class="carousel-inner" role="listbox">
+	      <div class="item active">
+	        <img src="images/thorndike1.png" alt="T1" width="460" height="345">
+	          <div class="carousel-caption">
+	              <p>Portrait of Mr. Edward L. Thorndike, Teachers College. (Date not known) (N/A, 1900-1950), by Photographer: Unknown</p>
+	          </div> 
+	      </div>
+
+	      <div class="item">
+	        <img src="images/thorndike2.png" alt="t2" width="460" height="345">
+	          <div  class="carousel-caption">
+	            <p>Edward L. Thorndike Faculty File, pocketknowledge.tc.columbia.edu</p>
+	          </div>
+	      </div>
+	    
+	      <div class="item">
+	        <img src="images/thorndikefile.png" alt="file" width="460" height="345">
+	          <div  class="carousel-caption">
+	            <p>Edward L. Thorndike Faculty File, pocketknowledge.tc.columbia.edu</p>
+	          </div>
+	      </div>
+
+	      <div class="item">
+	        <img src="images/thorndiketest.png" alt="test" width="460" height="345">
+	          <div  class="carousel-caption">
+	            <p>Thorndike Test of Word Knowledge - Form B, pocketknowledge.tc.columbia.edu</p>
+	          </div>
+	      </div>
+	    </div>
+
+	    <!-- Left and right controls -->
+
+	    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+	      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	      <span class="sr-only">Previous</span>
+	    </a>
+	    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+	      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	      <span class="sr-only">Next</span>
+	    </a>
+
+	  </div>
+	</div>
+
+<!-- info about images/stuff -->
+		
+<!-- Citing source -->
+	<p></p>
+
+<!-- Third item -->
+	<h1 id="item03">Father of modern educational psychology</h1>
+
+<p>
+	Edward Lee Thorndike was a psychologist who spent nearly his entire career at Teachers College, Columbia University. His work on Comparative psychology and the learning process led to the theory of connectionism and helped lay the scientific foundation for modern educational psychology. He also worked on solving industrial problems, such as employee exams and testing.</p>
+	<h2>
+		<p>Edward Thorndike. (2016, March 12). In Wikipedia, The Free Encyclopedia. Retrieved 18:48, March 30, 2016, <p>
+		from https://en.wikipedia.org/w/index.php?title=Edward_Thorndike&oldid=709761050</p> </h2>
+	
+
+	<div class="nav">
+		<!-- <a class="arow_prev scroll" href="#item02">prev</a> -->
+	</div>
+<!-- Video -->
+<video width="320" height="240" controls>
+  <source src="ThorndikeComp.mp4" type="video/mp4">
+
+Your browser does not support the video tag.
+</video>
+<h2>
+<p> "Thorndike's Puzzle Box" - TC 125th Anniversary Archival Footage Showcase. <p> http://vialogues.com/vialogues/play/10619/ </h2>
+<!-- CV/Resume -->
+	<p>
+Education
+* Wesleyan University (BS, 1895) * Harvard University (MA, 1897) - Worked 
+with William James * Columbia University (Ph.D., 1898) - Under James M. Cattell 
+<p>
+Career * Assistant Professor of Pedagogy at Case 
+Western Reserve University (1898) * Faculty at Teachers College, Columbia 
+University (1899-1940) * President of American Psychological Association (1912) * 2nd President of Psychometric Society
+* President of American Association for the Advancement of Science (1934)
+* William James Lecturer, Harvard University (1942-1943) 
+<p>
+Major Contributions * During his 55-year career, he published about 500 books and articles on diverse as learning in fish, methods of statistical analysis and the elements of aesthetic quality in urban life. * Studied animal intelligence (known for his 'cats in a puzzle box' experiments on Trial and Error) * Applied animal to human educational experience; he was once the leader in this field. * Constructed a scale to measure children's handwriting (1910) and a table of word-frequency in English (1944).</p>
+
+<!-- Citing source -->
+	<h2 id="item04">More information can be found at Pocketknowledge.tc.columbia.edu</h2>
+
+</div> <!-- / content -->
+
+<a class="arow_top scroll" href="#hero">
+	<svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 200" xml:space="preserve">
+				<g>
+					<path d="M106.308,29.384c6.332,0,11.664,2.444,15.984,7.344c9.214,11.232,18.286,22.174,27.216,32.832l43.2,51.84
+						c5.184-6.629,11.806-14.62,19.873-23.976c8.059-9.362,15.834-18.65,23.328-27.864c8.922-10.658,17.994-21.6,27.215-32.832
+						c4.32-4.9,9.646-7.344,15.984-7.344c4.895,0,9.355,1.58,13.393,4.752c4.32,3.74,6.764,8.424,7.344,14.04
+						c0.574,5.616-1.014,10.726-4.752,15.336l-86.4,103.68c-4.037,4.894-9.362,7.344-15.984,7.344c-6.628,0-11.954-2.45-15.984-7.344
+						l-86.4-103.68c-3.747-4.61-5.333-9.72-4.752-15.336c0.574-5.616,3.024-10.3,7.344-14.04
+						C96.945,30.964,101.407,29.384,106.308,29.384z"></path>
+				</g>
+			</svg>
+</a>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
