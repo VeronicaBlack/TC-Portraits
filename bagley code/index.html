@@ -1,0 +1,213 @@
+<!-- 2016 by Alex (http://codepen.io/akwright/pen/azyzVZ) -->
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Teachers College Historical Portraiture</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+
+        <link rel="stylesheet" href="css/style.css">
+		
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  	<!-- Timer to scroll back up to the top-->
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        var idleState = false;
+        var idleTimer = null;
+        $('*').bind('mousemove click mouseup mousedown keydown keypress keyup submit change mouseenter scroll resize dblclick', function () {
+            clearTimeout(idleTimer);
+            if (idleState == true) {
+                $("body").css('background-color','#fff');            
+            }
+            idleState = false;
+            idleTimer = setTimeout(function () {
+				window.scrollTo(0, 0);			
+                // $("body").css('background-color','#000');
+                idleState = true; }, 360000); //change that number into the miliseconds you want it to wait before you reload. 60000 = 1min. 
+        });
+        $("body").trigger("mousemove");
+    });
+
+</script>
+
+  <style>
+	  .carousel-inner > .item > img,
+	  .carousel-inner > .item > a > img {
+	      width: 70%;
+	      margin: auto;
+	  }
+  </style>
+
+  </head>
+
+  <body>
+
+    <div id="hero">
+
+	<h1>Teachers College Historical Portraiture<br>Restored Oil Paintings<p><span>William Chandler Bagley</span></p></h1>
+
+	<a class="arow_down scroll" href="#item01">
+		<svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 200" xml:space="preserve">
+				<g>
+					<path d="M106.308,29.384c6.332,0,11.664,2.444,15.984,7.344c9.214,11.232,18.286,22.174,27.216,32.832l43.2,51.84
+						c5.184-6.629,11.806-14.62,19.873-23.976c8.059-9.362,15.834-18.65,23.328-27.864c8.922-10.658,17.994-21.6,27.215-32.832
+						c4.32-4.9,9.646-7.344,15.984-7.344c4.895,0,9.355,1.58,13.393,4.752c4.32,3.74,6.764,8.424,7.344,14.04
+						c0.574,5.616-1.014,10.726-4.752,15.336l-86.4,103.68c-4.037,4.894-9.362,7.344-15.984,7.344c-6.628,0-11.954-2.45-15.984-7.344
+						l-86.4-103.68c-3.747-4.61-5.333-9.72-4.752-15.336c0.574-5.616,3.024-10.3,7.344-14.04
+						C96.945,30.964,101.407,29.384,106.308,29.384z"></path>
+				</g>
+			</svg>
+	</a>
+</div> 
+<!-- / hero -->
+
+<!-- First item -->
+<div class="content">
+	
+	<h1 id="item01">Portrait of William Chandler Bagley</h1>
+	<div class="nav">
+		<!--  <a class="arow_prev scroll" href="#hero">prev</a>
+		<br>
+		<a class="arow_next scroll" href="#item02">next</a> -->
+	</div>
+	<p>William Chandler Bagley was born March 15, 1874, in Detroit, Michigan. Bagley attended high school in Detroit and in 1891 enrolled in the Michigan Agricultural College (now Michigan State University) to study scientific agriculture. He received his bachelor's degree in 1895, but finding no immediate employment in his field, he took a position as a teacher in a one-room school in the town of Garth, a lumber community in the Upper Peninsula of Michigan.
+	<p>	
+	His interest in teaching was awakened with this experience, and in the summer of 1896 he began studies at the University of Chicago in the field of education and learning theory. Then, after a second year teaching at Garth, he enrolled as a full-time student, on borrowed money, at the University of Wisconsin, completing his master's degree in 1898. He then began work toward a doctorate in education and psychology at Cornell University, studying with Edward Bradford Titchener, a leading laboratory psychologist at that time. He completed the Ph.D. degree in 1900 with a dissertation entitled "The Apperception of the Spoken Sentence."
+	<p>
+	Bagley's first faculty appointment was in 1902 at the Montana State Normal College at Dillon as professor of psychology and pedagogy and director of teacher training. He also served as superintendent of the local Dillon public schools, where he promoted such innovations as the use of college student teachers in the schools. After several years there and in a similar faculty appointment at the State Normal School in Oswego, New York, in 1909 Bagley was appointed professor and director of the School of Education at the University of Illinois. During this period of expansion of American schools and of teacher education institutions, Bagley worked to create a strong faculty and to build an influential program in education at the University of Illinois. In 1917 he left Illinois to accept a professorship at Teachers College, Columbia University, in New York City. There he organized a department for the study of normal schools and teacher education. He continued in this position at Teachers College until his retirement in 1939.
+ </p>
+	
+<!-- Citing source -->
+	<h2 id="item04"> www.encyclopedia.com/topic/William_Chandler_Bagley.aspx </h2>
+
+<!-- Second item -->
+	<h1 id="item02">Photograph</h1>
+	<div class="nav">
+		<!-- <a class="arow_prev scroll" href="#item01">prev</a>
+		<br>
+		<a class="arow_next scroll" href="#item03">next</a> -->
+	</div>
+
+<!-- Image -->
+<!-- <img src="images/thorndike1.png" alt="thorndike" height="780" width="450"> -->
+<!-- 	<h2 id="item04">
+	<p>Portrait Of Mr. Edward L. Thorndike, Teachers College. (Date Not Known) (n/a, 1900-1950), by Photographer: 
+		Unknown </h2> -->
+
+<!-- Adding bootstrap carosuell here -->
+
+	<div class="container">
+	  <br>
+	  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+	    <!-- Indicators -->
+	<!--     <ol class="carousel-indicators">
+	      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	      <li data-target="#myCarousel" data-slide-to="1"></li>
+	      <li data-target="#myCarousel" data-slide-to="2"></li>
+	      <li data-target="#myCarousel" data-slide-to="3"></li>
+	    </ol> -->
+
+	    <!-- Wrapper for slides -->
+	    <div class="carousel-inner" role="listbox">
+	      <div class="item active">
+	        <img src="images/bagley.png" alt="T1" width="460" height="345">
+	          <div class="carousel-caption">
+	              <p>Letter from William C. Bagley 1927</p>
+	          </div> 
+	      </div>
+
+	      <div class="item">
+	        <img src="images/bagley2.png" alt="t2" width="460" height="345">
+	          <div  class="carousel-caption">
+	            <p>A book titled "William Chandler Bagley Stalwart Educator" authored by I. L. Kandel where Teachers College Library Columbia University</p>
+	          </div>
+	      </div>
+	    
+	      <div class="item">
+	        <img src="images/bagley3.png" alt="file" width="460" height="345">
+	          <div  class="carousel-caption">
+	            <p>A book titled "William Chandler Bagley Stalwart Educator" authored by I. L. Kandel where Teachers College Library Columbia University</p>
+	          </div>
+	      </div>
+
+	      <div class="item">
+	        <img src="images/bagley4.png" alt="test" width="460" height="345">
+	          <div  class="carousel-caption">
+	            <p>A book titled "William Chandler Bagley Stalwart Educator" authored by I. L. Kandel where Teachers College Library Columbia University</p>
+	          </div>
+	      </div>
+	    </div>
+
+	    <!-- Left and right controls -->
+
+	    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+	      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	      <span class="sr-only">Previous</span>
+	    </a>
+	    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+	      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	      <span class="sr-only">Next</span>
+	    </a>
+
+	  </div>
+	</div>
+
+<!-- info about images/stuff -->
+		
+<!-- Citing source -->
+	<p></p>
+
+<!-- Third item -->
+	<h1 id="item03">
+	<p></p>
+	<h2>
+		<p></p> 
+	</h2>
+	
+
+	<div class="nav">
+		<!-- <a class="arow_prev scroll" href="#item02">prev</a> -->
+	</div>
+<!-- Video -->
+<!-- <video width="320" height="240" controls>
+  <source src="video/" type="video/mp4">
+
+Your browser does not support the video tag.
+</video> -->
+<h2>
+<p> </h2>
+<!-- CV/Resume -->
+	<p></p>
+
+<!-- Citing source -->
+	<h2 id="item04">More information can be found at Pocketknowledge.tc.columbia.edu</h2>
+
+</div> <!-- / content -->
+
+<a class="arow_top scroll" href="#hero">
+	<svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 200" xml:space="preserve">
+				<g>
+					<path d="M106.308,29.384c6.332,0,11.664,2.444,15.984,7.344c9.214,11.232,18.286,22.174,27.216,32.832l43.2,51.84
+						c5.184-6.629,11.806-14.62,19.873-23.976c8.059-9.362,15.834-18.65,23.328-27.864c8.922-10.658,17.994-21.6,27.215-32.832
+						c4.32-4.9,9.646-7.344,15.984-7.344c4.895,0,9.355,1.58,13.393,4.752c4.32,3.74,6.764,8.424,7.344,14.04
+						c0.574,5.616-1.014,10.726-4.752,15.336l-86.4,103.68c-4.037,4.894-9.362,7.344-15.984,7.344c-6.628,0-11.954-2.45-15.984-7.344
+						l-86.4-103.68c-3.747-4.61-5.333-9.72-4.752-15.336c0.574-5.616,3.024-10.3,7.344-14.04
+						C96.945,30.964,101.407,29.384,106.308,29.384z"></path>
+				</g>
+			</svg>
+</a>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
